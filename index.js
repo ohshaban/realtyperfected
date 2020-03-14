@@ -62,19 +62,15 @@ $(document).ready(() => {
   $('#signUpForm').on('submit', async function(e) {
     e.preventDefault();
     if (this.checkValidity() === true) {
-      let result = await axios({
-        method: 'post',
-        url: 'http://realtyperfected.com:3000/skrei/client',
-        data: {
-          "location": $('#locationInput').val(),
-          "homeType": $('#homeTypeInput').val(),
-          "budget": $('#budgetInput').val(),
-          "timeFrame": $('#timeFrameInput').val(),
-          "isSelling": $('#isSellingInput').val(),
-          "fullName": $('#nameInput').val(),
-          "email": $('#emailInput').val(),
-          "phone": $('#phoneInput').val()
-        }
+      let result = await axios.post('http://realtyperfected.com:3000/skrei/client', {
+        "location": $('#locationInput').val(),
+        "homeType": $('#homeTypeInput').val(),
+        "budget": $('#budgetInput').val(),
+        "timeFrame": $('#timeFrameInput').val(),
+        "isSelling": $('#isSellingInput').val(),
+        "fullName": $('#nameInput').val(),
+        "email": $('#emailInput').val(),
+        "phone": $('#phoneInput').val()
       });
       $(this).hide();
       $(this).next().fadeIn(300);
