@@ -62,44 +62,24 @@ $(document).ready(() => {
   $('#signUpForm').on('submit', function(e) {
     e.preventDefault();
     if (this.checkValidity() === true) {
-      // let result = await axios({
-      //   method: 'post',
-      //   url: 'realtyperfected.com/skrei/client',
-      //   data: {
-      //     "location": $('#locationInput').val(),
-      //     "homeType": $('#homeTypeInput').val(),
-      //     "budget": $('#budgetInput').val(),
-      //     "timeFrame": $('#timeFrameInput').val(),
-      //     "selling": $('#sellingInput').val(),
-      //     "fullName": $('#nameInput').val(),
-      //     "email": $('#emailInput').val(),
-      //     "phone": $('#phoneInput').val()
-      //   }
-      // });
+      let result = await axios({
+        method: 'post',
+        url: 'http://realtyperfected.com:3000/skrei/client',
+        data: {
+          "location": $('#locationInput').val(),
+          "homeType": $('#homeTypeInput').val(),
+          "budget": $('#budgetInput').val(),
+          "timeFrame": $('#timeFrameInput').val(),
+          "selling": $('#sellingInput').val(),
+          "fullName": $('#nameInput').val(),
+          "email": $('#emailInput').val(),
+          "phone": $('#phoneInput').val()
+        }
+      });
       $(this).hide();
       $(this).next().fadeIn(300);
     }
     this.classList.add('was-validated');
   });
 
-  //validation();
-
 });
-
-const validation = function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-}
