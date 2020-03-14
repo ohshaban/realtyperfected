@@ -9,7 +9,7 @@ $(document).ready(() => {
   $('#homeTypeForm').hide();
   $('#budgetForm').hide();
   $('#timeFrameForm').hide();
-  $('#sellingForm').hide();
+  $('#isSellingForm').hide();
   $('#signUpForm').hide();
   $('#thankYou').hide();
 
@@ -51,10 +51,10 @@ $(document).ready(() => {
     form.next().fadeIn(300);
   });
 
-  $('#sellingForm').on('click', 'button', null, function(e) {
+  $('#isSellingForm').on('click', 'button', null, function(e) {
     e.preventDefault();
-    let form = $('#sellingForm');
-    $('#sellingInput').val($(this).html());
+    let form = $('#isSellingForm');
+    $('#isSellingInput').val($(this).html());
     form.hide();
     form.next().fadeIn(300);
   });
@@ -70,7 +70,7 @@ $(document).ready(() => {
           "homeType": $('#homeTypeInput').val(),
           "budget": $('#budgetInput').val(),
           "timeFrame": $('#timeFrameInput').val(),
-          "selling": $('#sellingInput').val(),
+          "isSelling": $('#isSellingInput').val(),
           "fullName": $('#nameInput').val(),
           "email": $('#emailInput').val(),
           "phone": $('#phoneInput').val()
