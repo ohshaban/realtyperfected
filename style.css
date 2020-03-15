@@ -103,15 +103,15 @@ body {
 
 @media only screen and (max-width: 800px) {
   header h1 {
-    font-size: 15px;
-    color: green;
+    font-size: 20px;
+    color: orange;
   }
   header h2 {
-    font-size: 10px;
-    color: green;
+    font-size: 15px;
+    color: orange;
   }
   header img {
-    max-width: 25px;
+    max-width: 40px;
   }
 }
 
