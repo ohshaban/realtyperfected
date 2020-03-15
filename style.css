@@ -101,17 +101,17 @@ body {
   }
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-width: 800px) {
   header h1 {
-    font-size: 30px;
-    color: yellow;
+    font-size: 15px;
+    color: green;
   }
   header h2 {
-    font-size: 25px;
-    color: yellow;
+    font-size: 10px;
+    color: green;
   }
   header img {
-    max-width: 60px;
+    max-width: 25px;
   }
 }
 
