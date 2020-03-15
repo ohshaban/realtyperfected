@@ -6,13 +6,6 @@ $(document).ready(() => {
     $("#locationInput").val(data['city'] + ", " + data['region_code']);
   });
 
-  $('#homeTypeForm').hide();
-  $('#budgetForm').hide();
-  $('#timeFrameForm').hide();
-  $('#isSellingForm').hide();
-  $('#signUpForm').hide();
-  $('#thankYou').hide();
-
   // $('input').on('focus', function(e) {
   //   $(this).parents('form:first').removeClass('was-validated');
   // });
@@ -24,7 +17,6 @@ $(document).ready(() => {
       $(this).next().fadeIn(300);
     }
     $(this).addClass('was-validated');
-    // this.classList.add('was-validated');
   });
 
   $('#homeTypeForm').on('click', 'button', null, function(e) {
@@ -75,7 +67,7 @@ $(document).ready(() => {
       $(this).hide();
       $(this).next().fadeIn(300);
     }
-    this.classList.add('was-validated');
+    $(this).addClass('was-validated');
   });
 
 });
