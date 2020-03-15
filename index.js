@@ -10,11 +10,11 @@ $(document).ready(() => {
   //   $(this).parents('form:first').removeClass('was-validated');
   // });
 
-  if (!window.mobilecheck) {
-    $('header img').css('width', 75);
-    $('header h2').replaceWith("<h3 class='masthead-brand'>" + $('header h2').html() + "</h3>");
-    $('header h1').replaceWith("<h2 class='masthead-brand'>" + $('header h1').html() + "</h2>");
-  }
+  // if (!window.mobilecheck) {
+  //   $('header img').css('width', 75);
+  //   $('header h2').replaceWith("<h3 class='masthead-brand'>" + $('header h2').html() + "</h3>");
+  //   $('header h1').replaceWith("<h2 class='masthead-brand'>" + $('header h1').html() + "</h2>");
+  // }
 
   $('#locationForm').on('submit', function(e) {
     e.preventDefault();
