@@ -103,14 +103,14 @@ body {
 
 @media only screen and (max-width: 800px) {
   header h1 {
-    font-size: 25px;
+    font-size: 23px;
   }
   header h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   header img {
-    max-width: 55px;
-    max-height: 53px;
+    max-width: 50px;
+    max-height: 48px;
   }
 }
 
