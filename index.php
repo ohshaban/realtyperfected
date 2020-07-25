@@ -2,9 +2,7 @@
 if(isset($_POST['submit'])){
     $to = "ohshaban@gmail.com"; // this is your Email address
     $from = "realtyperfected@realtyperfected.com"; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $subject = "New Lead";
+    $subject = "New Lead!";
     $message = "Full Name: " . $_POST['fullName'] . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br>";
 
     $headers = "From:" . $from;
