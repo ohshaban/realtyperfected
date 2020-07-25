@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $subject = "New Lead";
-    $message = "Full Name: " . $_POST['fullName'] . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br>"
+    $message = "Full Name: " . $_POST['fullName'] . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br>";
 
     $headers = "From:" . $from;
     mail($to, $subject, $message, $headers);
