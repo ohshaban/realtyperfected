@@ -56,11 +56,11 @@ if(isset($_POST['submit'])){
 
       <main role="main" class="inner cover">
 
-        <form id="locationForm" class="needs-validation" novalidate action="" method="post">
+        <form id="locationForm" class="needs-validation" novalidate>
           <h1 class="cover-heading">Start Your New Home Journey</h1>
           <p class="lead">Sign up with us for your new home buying experience and earn <span style="font-size: x-large; color:#ca3f46">$2,000</span> towards your closing costs.</p>
           <div class="form-group">
-            <input type="text" class="form-control form-control-lg" id="locationInput" name="location" placeholder="Where are you looking?" required>
+            <input type="text" class="form-control form-control-lg" id="locationInput" placeholder="Where are you looking?" required>
           </div>
           <button type="submit" class="btn btn-lg btn-primary">Get Started</button>
         </form>
@@ -70,7 +70,7 @@ if(isset($_POST['submit'])){
           <div class="form-group">
             <button id="newConstructionBtn" class="btn btn-lg btn-light m-2" style="width: 300px;">New Construction</button><br>
             <button id="resaleBtn" class="btn btn-lg btn-light m-2" style="width: 300px;">Resale</button>
-            <input type="text" class="form-control form-control-lg" id="homeTypeInput" name="homeType" required hidden>
+            <input type="text" class="form-control form-control-lg" id="homeTypeInput" required hidden>
           </div>
         </form>
 
@@ -84,7 +84,7 @@ if(isset($_POST['submit'])){
             <button id="600-btn" class="btn btn-light m-1" style="width: 300px;">$502k - $600k</button><br>
             <button id="903-btn" class="btn btn-light m-1" style="width: 300px;">$600k - $903k</button><br>
             <button id="more-btn" class="btn btn-light m-1" style="width: 300px;">$903k or more</button>
-            <input type="text" class="form-control form-control-lg" id="budgetInput" name="budget" required hidden>
+            <input type="text" class="form-control form-control-lg" id="budgetInput" required hidden>
           </div>
         </form>
 
@@ -96,7 +96,7 @@ if(isset($_POST['submit'])){
             <button id="3-6-btn" class="btn btn-light m-1" style="width: 300px;">3-6 months</button><br>
             <button id="6-12-btn" class="btn btn-light m-1" style="width: 300px;">6-12 months</button><br>
             <button id="12-btn" class="btn btn-light m-1" style="width: 300px;">12+ months</button>
-            <input type="text" class="form-control form-control-lg" id="timeFrameInput" name="timeFrame" required hidden>
+            <input type="text" class="form-control form-control-lg" id="timeFrameInput" required hidden>
           </div>
         </form>
 
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
           <div class="form-group">
             <button id="asap-btn" class="btn btn-lg btn-light m-2" style="width: 250px;">Yes</button><br>
             <button id="1-3-btn" class="btn btn-lg btn-light m-2" style="width: 250px;">No</button>
-            <input type="text" class="form-control form-control-lg" id="isSellingInput" name="isSelling" required hidden>
+            <input type="text" class="form-control form-control-lg" id="isSellingInput" required hidden>
           </div>
         </form>
 
@@ -113,17 +113,17 @@ if(isset($_POST['submit'])){
           <p style="font-size: xx-large;">Sign up with us</p>
           <div class="form-group">
             <label>FULL NAME</label>
-            <input type="text" class="form-control form-control-lg" id="nameInput" name="fullName" required>
+            <input type="text" class="form-control form-control-lg" id="nameInput" required>
           </div>
           <div class="form-group">
             <label>EMAIL ADDRESS</label>
-            <input type="email" class="form-control form-control-lg" id="emailInput" name="email" required>
+            <input type="email" class="form-control form-control-lg" id="emailInput" required>
           </div>
           <div class="form-group">
             <label>PHONE NUMBER</label>
-            <input type="tel" class="form-control form-control-lg" id="phoneInput" name="phone" required>
+            <input type="tel" class="form-control form-control-lg" id="phoneInput" required>
           </div>
-          <button id="submitForm" type="submit" class="btn btn-lg btn-primary">Start Your New Home Journey</button>
+          <button type="submit" class="btn btn-lg btn-primary">Start Your New Home Journey</button>
         </form>
 
         <div id="thankYou" class="inner text-center" style="display: none;">
