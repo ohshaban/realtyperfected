@@ -2,12 +2,13 @@
 if(isset($_POST['submit'])){
     $to = "ohshaban@gmail.com"; // this is your Email address
     $from = "realtyperfected@realtyperfected.com"; // this is the sender's Email address
+    $full_name = $_POST['fullName'];
     $subject = "New Lead!";
-    $message = "Full Name: " . $_POST['fullName'] . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br>";
+    $message = "Full Name: " . $full_name . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br>";
 
     $headers = "From:" . $from;
     mail($to, $subject, $message, $headers);
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    echo "Mail Sent. Thank you " . $full_name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 }
 ?>
