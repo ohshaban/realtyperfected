@@ -4,7 +4,7 @@ if(isset($_POST['newLead'])){
     $from = "RealtyPerfected <realtyperfected@realtyperfected.com>"; // this is the sender's Email address
     $full_name = $_POST['fullName'];
     $subject = "New Lead!";
-    $message = "Full Name: " . $full_name . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br><br>Location: " . $_POST['location'] . '<br>HomeType: ' . $_POST['homeType'] . '<br>Budget: ' . $_POST['budget'] . '<br>Time Frame: ' . $_POST['timeFrame'] . '<br>Is Selling: ' . $_POST['isSelling'];
+    $message = "<html><body>Full Name: " . $full_name . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br><br>Location: " . $_POST['location'] . '<br>HomeType: ' . $_POST['homeType'] . '<br>Budget: ' . $_POST['budget'] . '<br>Time Frame: ' . $_POST['timeFrame'] . '<br>Is Selling: ' . $_POST['isSelling'] . "</body></html>";
 
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -34,14 +34,16 @@ if(isset($_POST['newLead'])){
   </head>
   <body class="">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="flex-row mb-auto d-flex justify-content-center">
-          <a href="/"><img style="width: 90px; height: 85px" src="RealtyPerfectedLogo.png" /></a>
+      <a href="/">
+        <header class="flex-row mb-auto d-flex justify-content-center">
+          <img style="width: 90px; height: 85px" src="RealtyPerfectedLogo.png" />
 
           <div class="inner">
             <h1 style="margin: 0px;"><span style="color: #ca3f46">S&K</span> Real Estate and Investments LLC</h1>
             <h2 style="margin: 0px;"><span style="color: #ca3f46">Realty</span>Perfected</h2>
           </div>
-      </header>
+        </header>
+      </a>
 
       <main role="main" class="inner cover">
 
