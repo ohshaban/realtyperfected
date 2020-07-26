@@ -69,7 +69,7 @@ $(document).ready(() => {
         "fullName": $('#nameInput').val(),
         "email": $('#emailInput').val(),
         "phone": $('#phoneInput').val(),
-        "submit": "Submit"
+        "newLead": true
       };
       let $form = $('<form>', {
         action: '',
