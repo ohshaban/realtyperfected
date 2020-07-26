@@ -57,7 +57,7 @@ $(document).ready(() => {
     form.next().fadeIn(300);
   });
 
-  $('#signUpForm').on('submit', async function(e) {
+  $('#signUpForm').on('submit', function(e) {
     e.preventDefault();
     if (this.checkValidity() === true) {
       let fields = {
