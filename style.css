@@ -13,11 +13,12 @@
  */
 
 /* Links */
-/* a, */
-/* a:focus, */
-/* a:hover { */
-/*   color: #fff; */
-/* } */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
 
 /* Custom default button */
 .btn-secondary,
