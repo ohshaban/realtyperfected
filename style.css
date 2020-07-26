@@ -1,5 +1,5 @@
-/* body { 
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('house-background.jpg') no-repeat center center fixed; 
+/* body {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('house-background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,11 +13,11 @@
  */
 
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
+/* a, */
+/* a:focus, */
+/* a:hover { */
+/*   color: #fff; */
+/* } */
 
 /* Custom default button */
 .btn-secondary,
@@ -46,7 +46,7 @@ body {
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('house-background.jpg') no-repeat center center fixed; 
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('house-background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
