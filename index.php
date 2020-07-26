@@ -1,16 +1,17 @@
 <?php
 if(isset($_POST['newLead'])){
-    $to = "ohshaban@gmail.com"; // this is your Email address
-    $from = "realtyperfected@realtyperfected.com"; // this is the sender's Email address
+    $to = "ohshaban@gmail.com, developer.ohs@gmail.com"; // this is your Email address
+    $from = "RealtyPerfected <realtyperfected@realtyperfected.com>"; // this is the sender's Email address
     $full_name = $_POST['fullName'];
     $subject = "New Lead!";
-    $message = "Full Name: " . $full_name . "\nEmail: " . $_POST['email'] . "\nPhone: " . $_POST['phone'] . "\n\nLocation: " . $_POST['location'] . '\nHomeType: ' . $_POST['homeType'] . '\nBudget: ' . $_POST['budget'] . '\nTime Frame: ' . $_POST['timeFrame'] . '\nIs Selling: ' . $_POST['isSelling'];
+    $message = "Full Name: " . $full_name . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br><br>Location: " . $_POST['location'] . '<br>HomeType: ' . $_POST['homeType'] . '<br>Budget: ' . $_POST['budget'] . '<br>Time Frame: ' . $_POST['timeFrame'] . '<br>Is Selling: ' . $_POST['isSelling'];
 
-    $headers = "From:" . $from;
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers = "From: " . $from . "\r\n";
+
     mail($to, $subject, $message, $headers);
     header('Location: thank_you.html');
-    // echo "Mail Sent. Thank you " . $full_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
 }
 ?>
 
