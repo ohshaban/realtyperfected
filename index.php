@@ -4,11 +4,12 @@ if(isset($_POST['newLead'])){
     $from = "realtyperfected@realtyperfected.com"; // this is the sender's Email address
     $full_name = $_POST['fullName'];
     $subject = "New Lead!";
-    $message = "Full Name: " . $full_name . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br>";
+    $message = "Full Name: " . $full_name . "\nEmail: " . $_POST['email'] . "\nPhone: " . $_POST['phone'] . "\n\nLocation: " . $_POST['location'] . '\nHomeType: ' . $_POST['homeType'] . '\nBudget: ' . $_POST['budget'] . '\nTime Frame: ' . $_POST['timeFrame'] . '\nIs Selling: ' . $_POST['isSelling'];
 
     $headers = "From:" . $from;
     mail($to, $subject, $message, $headers);
-    echo "Mail Sent. Thank you " . $full_name . ", we will contact you shortly.";
+    header('Location: thank_you.html');
+    // echo "Mail Sent. Thank you " . $full_name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
 }
 ?>
@@ -33,24 +34,12 @@ if(isset($_POST['newLead'])){
   <body class="">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="flex-row mb-auto d-flex justify-content-center">
-          <!-- style="margin-left: 7px;"  -->
-          <!-- <img class="masthead-brand" style="width: 80px; margin-top: 5px;" src="RealtyPerfectedLogo.png" /> -->
-          <img style="width: 90px; height: 85px" src="RealtyPerfectedLogo.png" />
-          <!-- <h6>Hello</h6> -->
-          <!-- <h6>World</h6> -->
+          <a href="/"><img style="width: 90px; height: 85px" src="RealtyPerfectedLogo.png" /></a>
 
-          <!-- <img style="width: 6.8vw;" src="RealtyPerfectedLogo.png" /> -->
           <div class="inner">
-            <!-- <h1 style="font-size: 3vw; margin: 0px;"><span style="color: #ca3f46">S&K</span> Real Estate and Investments LLC</h1> -->
             <h1 style="margin: 0px;"><span style="color: #ca3f46">S&K</span> Real Estate and Investments LLC</h1>
             <h2 style="margin: 0px;"><span style="color: #ca3f46">Realty</span>Perfected</h2>
-            <!-- <h2 style="font-size: 2.5vw; margin: 0px;"><span style="color: #ca3f46">Realty</span>Perfected</h2> -->
           </div>
-          <!-- <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav> -->
       </header>
 
       <main role="main" class="inner cover">
@@ -124,11 +113,6 @@ if(isset($_POST['newLead'])){
           </div>
           <button type="submit" class="btn btn-lg btn-primary">Start Your New Home Journey</button>
         </form>
-
-        <div id="thankYou" class="inner text-center" style="display: none;">
-          <h1 class="cover-heading">Thank you for signing up with us!</h1>
-          <p class="lead">You will hear back from us within 24 hours.</p>
-        </div>
 
       </main>
 

@@ -93,8 +93,8 @@ $(document).ready(() => {
       //   "email": $('#emailInput').val(),
       //   "phone": $('#phoneInput').val()
       // });
-      $(this).hide();
-      $(this).next().fadeIn(300);
+      // $(this).hide();
+      // $(this).next().fadeIn(300);
     }
     $(this).addClass('was-validated');
   });
