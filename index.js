@@ -68,7 +68,8 @@ $(document).ready(() => {
         "isSelling": $('#isSellingInput').val(),
         "fullName": $('#nameInput').val(),
         "email": $('#emailInput').val(),
-        "phone": $('#phoneInput').val()
+        "phone": $('#phoneInput').val(),
+        "submit": "Submit"
       };
       let $form = $('<form>', {
         action: '',
