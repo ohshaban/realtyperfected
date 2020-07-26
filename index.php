@@ -30,7 +30,7 @@ if(isset($_POST['newLead'])){
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
 
     <link rel="icon" href="RealtyPerfectedLogo.png">
-    <title>RealtyPerfected</title>
+    <title>Realty Perfected</title>
   </head>
   <body class="">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -53,6 +53,7 @@ if(isset($_POST['newLead'])){
           <h1 class="cover-heading">Start Your New Home Journey</h1>
           <p class="lead">Sign up with us for your new home buying experience and earn <span style="font-size: x-large; color:#ca3f46">$2,000</span> towards your closing costs.</p>
           <div class="form-group">
+            <label>Where are you looking?</label>
             <input type="text" class="form-control form-control-lg" id="locationInput" placeholder="Where are you looking?" required>
           </div>
           <button type="submit" class="btn btn-lg btn-primary">Get Started</button>
