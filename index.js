@@ -6,16 +6,6 @@ $(document).ready(() => {
     $("#locationInput").val(data['city'] + ", " + data['region_code']);
   });
 
-  // $('input').on('focus', function(e) {
-  //   $(this).parents('form:first').removeClass('was-validated');
-  // });
-
-  // if (!window.mobilecheck) {
-  //   $('header img').css('width', 75);
-  //   $('header h2').replaceWith("<h3 class='masthead-brand'>" + $('header h2').html() + "</h3>");
-  //   $('header h1').replaceWith("<h2 class='masthead-brand'>" + $('header h1').html() + "</h2>");
-  // }
-
   $('#locationForm').on('submit', function(e) {
     e.preventDefault();
     if (this.checkValidity() === true) {
@@ -75,26 +65,15 @@ $(document).ready(() => {
         action: '',
         method: 'post'
       });
-      $.each(fields, function(key, val) {
+      for (const prop in fields) {
+	if (fields[prop] === "") return;
         $('<input>').attr({
           type: "hidden",
-          name: key,
-          value: val
+          name: prop,
+          value: fields[prop]
         }).appendTo($form);
-      });
+      }
       $form.appendTo('body').submit();
-      // let result = await axios.post('http://realtyperfected.com:3000/skrei/client', {
-      //   "location": $('#locationInput').val(),
-      //   "homeType": $('#homeTypeInput').val(),
-      //   "budget": $('#budgetInput').val(),
-      //   "timeFrame": $('#timeFrameInput').val(),
-      //   "isSelling": $('#isSellingInput').val(),
-      //   "fullName": $('#nameInput').val(),
-      //   "email": $('#emailInput').val(),
-      //   "phone": $('#phoneInput').val()
-      // });
-      // $(this).hide();
-      // $(this).next().fadeIn(300);
     }
     $(this).addClass('was-validated');
   });
