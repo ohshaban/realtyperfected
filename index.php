@@ -18,6 +18,16 @@ if(isset($_POST['newLead'])){
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173633353-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173633353-1');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -123,7 +133,8 @@ if(isset($_POST['newLead'])){
       </main>
 
       <footer class="mastfoot mt-auto">
-        <div class="inner">
+       <div class="inner row d-flex flex-wrap align-items-center justify-content-center">
+          <img style="width: 100px" src="equal-housing-opportunity.png" />&nbsp;&nbsp;
           <p id="copyright"></p>
         </div>
       </footer>
