@@ -133,8 +133,8 @@ if(isset($_POST['newLead'])){
       </main>
 
       <footer class="mastfoot mt-auto">
-       <div class="inner row d-flex flex-wrap align-items-center justify-content-center">
-          <img style="width: 75px" src="equal-housing-opportunity-white.png" />
+        <div class="inner row d-flex flex-wrap align-items-center justify-content-start">
+          <img style="width: 80px" src="equal-housing-opportunity-white.png" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <p id="copyright"></p>
         </div>

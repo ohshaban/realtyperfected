@@ -1,6 +1,7 @@
 $(document).ready(() => {
 
-  $('#copyright').html('Copyright &copy; ' + (new Date()).getFullYear() + ' S&K Real Estate and Investments LLC');
+  $('#copyright').html('Apex, North Carolina<br>Licensed Real Estate Firm in the state of North Carolina<br>' + 
+                       'Copyright &copy; ' + (new Date()).getFullYear() + ' S&K Real Estate and Investments LLC');
 
   $.getJSON('https://ipapi.co/json/', function(data) {
     $("#locationInput").val(data['city'] + ", " + data['region_code']);
