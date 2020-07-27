@@ -134,7 +134,7 @@ if(isset($_POST['newLead'])){
 
       <footer class="mastfoot mt-auto">
        <div class="inner row d-flex flex-wrap align-items-center justify-content-center">
-          <img style="width: 100px" src="equal-housing-opportunity-white.png" />
+          <img style="width: 75px" src="equal-housing-opportunity-white.png" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <p id="copyright"></p>
         </div>
