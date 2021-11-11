@@ -33,20 +33,20 @@ if(isset($_POST['newLead'])){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 
     <!-- Other CSS and Fonts-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
 
-    <link rel="icon" href="RealtyPerfectedLogo.png">
+    <link rel="icon" href="images/RealtyPerfectedLogo.png">
     <title>Realty Perfected</title>
   </head>
   <body class="">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="flex-row mb-auto d-flex justify-content-center">
         <a href="/">
-          <img style="width: 90px; height: 85px; margin-right: 5px;" src="RealtyPerfectedLogo.png" />
+          <img style="width: 90px; height: 85px; margin-right: 5px;" src="images/RealtyPerfectedLogo.png" />
         </a>
 
         <a href="/">
@@ -61,7 +61,7 @@ if(isset($_POST['newLead'])){
 
         <form id="locationForm" class="needs-validation" novalidate>
           <h1 class="cover-heading">Start Your New Home Journey</h1>
-          <p class="lead">Sign up with us for your new home buying experience and earn <span style="font-size: x-large; color:#ca3f46">$2,000</span> towards your closing costs.</p>
+          <p class="lead">Sign up with us for your new home buying experience and earn <span style="font-size: x-large; color:#ca3f46">$2,000 or more</span> towards your closing costs.</p>
           <div class="form-group">
             <label>Where are you looking?</label>
             <input type="text" class="form-control form-control-lg" id="locationInput" placeholder="Where are you looking?" required>
@@ -134,7 +134,7 @@ if(isset($_POST['newLead'])){
 
       <footer class="mastfoot mt-auto">
         <div class="inner row d-flex flex-wrap align-items-center justify-content-center">
-          <img style="width: 70px" src="equal-housing-opportunity-white.png" />
+          <img style="width: 70px" src="images/equal-housing-opportunity-white.png" />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <p id="copyright"></p>
         </div>
@@ -144,9 +144,8 @@ if(isset($_POST['newLead'])){
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
