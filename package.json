@@ -2,7 +2,7 @@
   "name": "lead-generation",
   "version": "1.0.0",
   "description": "RealtyPerfected lead generation webpage",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
