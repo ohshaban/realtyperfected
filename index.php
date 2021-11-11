@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['newLead'])){
-    $to = "aitch.sfs@gmail.com, ohshaban@gmail.com"; // this is your Email address
+    $to = "agentshaban@gmail.com, ohshaban@gmail.com"; // this is your Email address
     $from = "RealtyPerfected <realtyperfected@realtyperfected.com>"; // this is the sender's Email address
     $full_name = $_POST['fullName'];
     $subject = "New Lead: " . $full_name;
