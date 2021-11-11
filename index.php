@@ -81,13 +81,13 @@ if(isset($_POST['newLead'])){
         <form id="budgetForm" class="needs-validation text-center" style="display: none;" novalidate>
           <p style="font-size: xx-large;">How much are you looking to spend?</p>
           <div class="form-group">
-            <button id="338-btn" class="btn btn-light m-1" style="width: 300px;">$250k - $338k</button><br>
-            <button id="250-btn" class="btn btn-light m-1" style="width: 300px;">$250k or less</button><br>
-            <button id="398-btn" class="btn btn-light m-1" style="width: 300px;">$338k - $398k</button><br>
-            <button id="502-btn" class="btn btn-light m-1" style="width: 300px;">$398k - $502k</button><br>
-            <button id="600-btn" class="btn btn-light m-1" style="width: 300px;">$502k - $600k</button><br>
-            <button id="903-btn" class="btn btn-light m-1" style="width: 300px;">$600k - $903k</button><br>
-            <button id="more-btn" class="btn btn-light m-1" style="width: 300px;">$903k or more</button>
+            <button id="less-btn" class="btn btn-light m-1" style="width: 300px;">$300k or less</button><br>
+            <button id="300-btn" class="btn btn-light m-1" style="width: 300px;">$300k - $400k</button><br>
+            <button id="400-btn" class="btn btn-light m-1" style="width: 300px;">$400k - $500k</button><br>
+            <button id="500-btn" class="btn btn-light m-1" style="width: 300px;">$500k - $600k</button><br>
+            <button id="600-btn" class="btn btn-light m-1" style="width: 300px;">$600k - $700k</button><br>
+            <button id="700-btn" class="btn btn-light m-1" style="width: 300px;">$700k - $800k</button><br>
+            <button id="more-btn" class="btn btn-light m-1" style="width: 300px;">$800k or more</button>
             <input type="text" class="form-control form-control-lg" id="budgetInput" required hidden>
           </div>
         </form>
