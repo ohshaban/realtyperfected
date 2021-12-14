@@ -3,9 +3,9 @@ $(document).ready(() => {
   $('#copyright').html('Durham, North Carolina<br>Licensed Real Estate Firm in the state of North Carolina<br>' +
                        'Copyright &copy; ' + (new Date()).getFullYear() + ' S&K Real Estate and Investments LLC');
 
-  $.getJSON('https://ipapi.co/json/', function(data) {
-    $("#locationInput").val(data['city'] + ", " + data['region_code']);
-  });
+  // $.getJSON('https://ipapi.co/json/', function(data) {
+  //   $("#locationInput").val(data['city'] + ", " + data['region_code']);
+  // });
 
   $('#locationForm').on('submit', function(e) {
     e.preventDefault();

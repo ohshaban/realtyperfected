@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['newLead'])){
     $to = "agentshaban@gmail.com, ohshaban@gmail.com"; // this is your Email address
-    $from = "RealtyPerfected <realtyperfected@realtyperfected.com>"; // this is the sender's Email address
+    $from = "RealtyPerfected <admin@realty-perfected.com>"; // this is the sender's Email address
     $full_name = $_POST['fullName'];
     $subject = "New Lead: " . $full_name;
     $message = "<html><body>Full Name: " . $full_name . "<br>Email: " . $_POST['email'] . "<br>Phone: " . $_POST['phone'] . "<br><br>Location: " . $_POST['location'] . '<br>HomeType: ' . $_POST['homeType'] . '<br>Budget: ' . $_POST['budget'] . '<br>Time Frame: ' . $_POST['timeFrame'] . '<br>Is Selling: ' . $_POST['isSelling'] . "</body></html>";
@@ -19,13 +19,13 @@ if(isset($_POST['newLead'])){
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173633353-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-212591730-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'UA-173633353-1');
+        gtag('config', 'UA-212591730-1');
     </script>
 
     <!-- Required meta tags -->
@@ -61,9 +61,8 @@ if(isset($_POST['newLead'])){
 
         <form id="locationForm" class="needs-validation" novalidate>
           <h1 class="cover-heading">Start Your New Home Journey</h1>
-          <p class="lead">Sign up with us for your new home buying experience and earn <span style="font-size: x-large; color:#ca3f46">$2,000 or more</span> towards your closing costs.</p>
+          <p class="lead">Sign up with us for your new home buying experience and <span style="font-size: x-large; color:#ca3f46">earn cash back</span> towards your closing costs.</p>
           <div class="form-group">
-            <label>Where are you looking?</label>
             <input type="text" class="form-control form-control-lg" id="locationInput" placeholder="Where are you looking?" required>
           </div>
           <button type="submit" class="btn btn-lg btn-primary">Get Started</button>
