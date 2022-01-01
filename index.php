@@ -19,12 +19,14 @@ if(isset($_POST['newLead'])){
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0EBSQ3TDZY"></script>
     <script>
-     // window.dataLayer = window.dataLayer || [];
-     // function gtag(){dataLayer.push(arguments);}
-     // gtag('js', new Date());
-     //
-     // gtag('config', 'UA-212591730-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0EBSQ3TDZY');
+        gtag('config', 'AW-10833637276');
     </script>
 
     <!-- Required meta tags -->
